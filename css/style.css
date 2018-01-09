@@ -30,6 +30,12 @@ nav{
     border-left: 1px solid grey;
 }
 
+.iframe-video{
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+
 .slider{
     width: 100%;
 }
