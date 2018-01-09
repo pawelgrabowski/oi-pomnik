@@ -1,0 +1,112 @@
+header, nav{
+    background-color: #2e2866;
+}
+
+nav{
+    padding: 16px 32px !important;
+}
+
+#logo{
+    height: 56px;
+}
+
+#logo img{
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    top: -50px;
+    box-shadow: 3px 3px 10px black;
+}
+
+#page-title > h1, h2, h3, h4, h5, h6{
+    text-transform: uppercase;
+}
+
+#main-container{
+    min-height: 480px;
+}
+
+#main-container #right-side{
+    border-left: 1px solid grey;
+}
+
+.slider{
+    width: 100%;
+}
+
+.slider-slide{
+    display: flex;
+}
+
+.slider-slide, .slider-slide *{
+    width: 100%;
+}
+
+.slider-slide{
+    display: none;
+}
+
+.slider-slide:target{
+    display: block;
+}
+
+.default-slide{
+    display: block;
+}
+
+.slider-control{
+    text-align: center;
+}
+
+.slider-link{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #F4CF00;   
+}
+
+.slider-link:first-child{
+    background-color: red;
+}
+
+iframe#form{
+    border: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+@media screen and (max-width:575px){
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.25rem;
+    }
+    h4{
+        font-size: 1rem;
+    }
+    h5{
+        font-size: 0.73rem;
+    }  
+    h6{
+        font-size: 0.5rem;
+    }
+
+    #logo{
+        height: 0;
+    }
+
+    #logo img{
+        top: -62.5px;
+        width: 50px;
+    }
+
+    #page-title > h1, h2, h3, h4, h5, h6{
+        text-align: left !important;
+    }
+}

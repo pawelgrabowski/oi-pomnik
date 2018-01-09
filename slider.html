@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Popper.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <!--BS4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/slider.js"></script>
+
+    <link rel="stylesheet" href="./css/slider.css">
+
+    <title>Slider</title>
+</head>
+<body>
+<div class="col-6" style="margin: 0 auto;">
+    <div class="slider">
+        <div class="slider-content">
+            <div class="slider-slide" id="slide-1">
+                <video class="player" autoplay>
+                    <source src="src/video.mp4" type="video/mp4">
+                    Twoja przeglądarka nie wspiera tego odtwarzacza.
+                </video>
+                <div class="player-progressbar">
+                    <div class="player-progress"></div>
+                </div>
+            </div>
+            <div class="slider-slide" id="slide-2">
+                <h2>Tytuł 1</h2>
+                <p>Lorem ipsum</p>
+            </div>
+            <div class="slider-slide" id="slide-3"></div>
+        </div>
+        <div class="slider-control">
+            <a class="slider-link" href="#slide-1"></a>
+            <a class="slider-link" href="#slide-2"></a>
+            <a class="slider-link" href="#slide-3"></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Popper.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <!--BS4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/player.js"></script>
+    <script src="js/slider.js"></script>
+
+    <title>Tytuł strony</title>
+</head>
+<body>
+<header class="container-fluid">
+    <nav class="navbar navbar-expand-sm">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link">&nbsp;</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container-fluid">
+    <div class="row" id="logo">
+        <div class="col-5 col-sm-5"></div>
+        <div class="col-2 col-sm-2 text-center">
+            <img src="src/logo_512.png" alt="Logo_OI">
+        </div>
+    </div>
+    <div class="row text-center pt-4 pb-4" id="page-title">
+        <h1 class="col-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit!</h1>
+    </div>
+    <div class="row" id="main-container">
+        <div class="col-md-6 col-sm-12" id="left-side">
+            <div class="slider">
+                <div class="slider-content">
+                    <div class="slider-slide default-slide" id="slide-1">
+                        <video class="player" autoplay>
+                            <source src="src/video.mp4" type="video/mp4">
+                            Twoja przeglądarka nie wspiera tego odtwarzacza.
+                        </video>
+                        <div class="player-progressbar">
+                            <div class="player-progress"></div>
+                        </div>
+                    </div>
+                    <div class="slider-slide" id="slide-2">
+                        <h2>Tytuł 1</h2>
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div class="slider-slide" id="slide-3"></div>
+                </div>
+                <div class="slider-control">
+                    <a class="slider-link" href="#slide-1"></a>
+                    <a class="slider-link" href="#slide-2"></a>
+                    <a class="slider-link" href="#slide-3"></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12" id="right-side">
+                <iframe id="form" src="https://formularz.ordoiuris.pl/pl/?option=com_rsform&formId=7"></iframe>
+        </div>
+    </div>
+</div>
+</body>
+</html>

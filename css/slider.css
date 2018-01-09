@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 444.73px;
+}
+
+.slider{
+    width: 100%;
+}
+
+.slider-slide{
+    display: flex;
+}
+
+.slider-slide, .slider-slide *{
+    width: 100%;
+}
+
+.slider-content{
+
+}
+
+.slider-content > div{
+    display: none;
+}
+
+.slider-content > div:target{
+    display: block;
+}
+
+.slider-control{
+    text-align: center;
+}
+
+.slider-link{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #F4CF00;   
+}
+
+.slider-link:first-child{
+    background-color: red;
+}
